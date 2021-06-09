@@ -1,0 +1,132 @@
+.form {
+  line-height: 130%;
+  width: 100%;
+  margin: 0;
+  padding: 28px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    padding: 50px 123px 60px 117px;
+  }
+}
+
+.form__label {
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  flex-basis: 280px;
+  flex-grow: 1;
+
+  &--highlighted {
+    color: @basic-green;
+  }
+
+}
+
+.form__input {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 10px 0 15px;
+  padding: 15px 0 15px 10px;
+  background: @basic-grey;
+  border: 1px solid @dark-grey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex-grow: 1;
+
+  &--tel {
+    max-width: 173px;
+    margin-right: 10px;
+  }
+
+  
+  @media (min-width: @desktop-width) {  
+    padding: 15px 0 15px 20px;
+    
+    &--tel {
+      max-width: 183px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.form__select {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: @basic-grey;
+  border: 1px solid @dark-grey;
+  margin: 10px 0 15px;
+  padding: 14px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    position: static;
+    width: 11px;
+    height: 6px;
+    background-color: transparent;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px 20px;
+  }
+}
+
+.form__select-flag {
+  margin: 0 8px;
+}
+
+.form__button {
+  font-weight: 600;
+  font-size: 14px;
+  color: @basic-white;
+  margin-top: 12px;
+  padding: 13px 20px;
+  background: @basic-green;
+  border: none;
+  border-radius: 5px;
+  flex-basis: 280px;
+  flex-grow: 1;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 22px;
+  }
+
+}
+
+.form__button-text {
+  padding-right: 27px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-color: transparent;
+    background-image: url("../img/arrow-next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    order: 2;
+    flex-grow: 0;
+  }
+}

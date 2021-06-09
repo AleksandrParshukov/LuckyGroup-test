@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LuckyGroup Test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body class="page-body">
+    <section class="order">
+      <div class="order__banner banner">
+        <p class="banner__text banner__text--first">Reduslim</p>
+        <picture>
+          <source media="(min-width: 1280px)" srcset="./img/banner-image-desktop.png">
+          <img class="banner__image" src="./img/banner-image-mobile.png" alt="Фото товара">
+        </picture>
+        <p class="banner__text banner__text--second">ECO</p>
+      </div>
+
+      <h2 class="order__title">Сделай шаг <br class="br br--desktop"> к выздоровлению</h2>
+
+      <form class="order__form form">
+        <label class="form__label" for="name">Ваше <span class="form__label--highlighted">имя</span></label>
+        <input class="form__input" type="text" id="name" name="name" placeholder="Алексей">
+
+        <label class="form__label" for="tel">Ваш <span class="form__label--highlighted">телефон</span></label>
+        <input class="form__input form__input--tel" type="tel" id="tel" name="tel" placeholder="+7 (123) 456 78-90">
+
+        <div class="form__select">
+          <span>Ru</span>
+          <img class="form__select-flag" src="./img/flag.png" width="26" height="18" alt="Флаг России">
+         </div>
+
+        <button class="form__button" type="submit"><span class="form__button-text">Заказать</span></button>
+      </form>
+
+      <footer class="order__footer">
+        <p>Trusted</p>
+        <img src="./img/lock.svg" width="12" height="15" alt="Иконка замка">
+        <p>Secure</p>
+      </footer>
+    </section>
+
+  </body> 
+</html>
